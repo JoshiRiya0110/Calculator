@@ -41,7 +41,8 @@ pipeline {
                 script {
                     ansiblePlaybook(
                         playbook: 'deploy.yml',
-                        inventory: 'inventory'
+                        inventory: 'inventory',
+                        credentialsId: 'your_ssh_credentials_id'
                      )
                 }
             }
