@@ -4,7 +4,6 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'calculator'
         GITHUB_REPO_URL = 'https://github.com/JoshiRiya0110/Calculator.git'
-        ANSIBLE_HOST_KEY_CHECKING = 'False'
     }
 
     stages {
