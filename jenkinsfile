@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'docker-hub-credential') {
-                    sh 'docker tag calculator iiitb/calculator:latest'
-                    sh 'docker push iiitb/calculator'
+                    sh 'docker tag calculator joshiriya/calculator:latest'
+                    sh 'docker push joshiriya/calculator'
                     }
                  }
             }
